@@ -1,0 +1,104 @@
+body {
+  font-family: arial, sans-serif;
+  margin: 0;
+}
+header {
+  position: fixed;
+  width: 100%;
+  height: 35px;
+  top: 0;
+  line-height: 40px;
+  padding-top: 5px;
+  padding-bottom: 35px;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+footer {
+  background-color: #f2f2f2;
+  position: fixed;
+  width: 100%;
+  height: 35px;
+  bottom: 0;
+  line-height: 40px;
+  border-top: 1px solid #e4e4e4;
+  padding-bottom: 5px;
+}
+a {
+  color: #5f6368;
+  text-decoration: none;
+  font-size: 14px;
+  padding-left: 27px;
+}
+a:hover {
+  text-decoration: underline;
+}
+.lastItem {
+  padding-right: 27px;
+}
+#google-logo {
+  height: 92px;
+  width: 272px;
+}
+.img-container {
+  text-align: center;
+  display: block;
+}
+.btn-container {
+  display: block;
+  width: 250px;
+  text-align: center;
+  margin-left: 25%;
+}
+.centerDiv {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 500px;
+  height: 500px;
+}
+.content {
+  margin-top: -100px;
+  width: 100%;
+  margin: auto;
+}
+#txtSearch {
+  display: flex;
+  flex: 100%;
+  width: 100%;
+  height: 35px;
+  border-radius: 15px;
+  padding: 5px;
+  border: 1px solid #5f6368;
+  margin-top: 37px;
+  margin-bottom: 20px;
+}
+.searchButton {
+  background-color: #f2f2f2;
+  color: #5f6368;
+  padding: 10px;
+}
+.signInButton {
+  background-color: #4586f6;
+  color: #ffffff;
+  padding: 5px 15px 5px 15px;
+  font-size: 14px;
+  margin-left: 20px;
+  margin-right: 27px;
+  font-weight: bold;
+}
+#btnTheme {
+  background-color: #212121;
+  color: #ffffff;
+  padding: 5px 15px 5px 15px;
+  font-size: 14px;
+  margin-left: 20px;
+  margin-right: 27px;
+  font-weight: bold;
+}

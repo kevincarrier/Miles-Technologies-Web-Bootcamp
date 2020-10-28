@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="google_search.css" />
+    </head>
+    <body>
+        <header>
+            <span class="float-left">
+                <a href="#">About</a>
+                <a href="#">Store</a>
+            </span>
+            <span class="float-right">
+                <button id="btnTheme" onclick="changeTheme()">Dark Theme</button>
+                <a href="#">Gmail</a>
+                <a href="#">Images</a>
+                <button class="signInButton lastItem">Sign In</button>
+            </span>
+        </header>
+        <div class="centerDiv">
+            <div class="content">
+                <span class="img-container">
+                    <img id="google-logo" src="google_logo.png" alt="Google" />
+                </span>
+                <input type="text" placeholder="Search" id="txtSearch"/>
+                <span class="btn-container">
+                    <button class="float-left searchButton">Google Search</button>
+                    <button class="float-right searchButton">I'm Feeling Lucky</button>
+                </span>
+            </div>
+        </div>
+        <footer id="bottomFooter">
+            <span class="float-left">
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">How Search Works</a>
+            </span>
+            <span class="float-right">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#" class="lastItem">Settings</a>
+            </span>
+        </footer>
+        <script type="text/javascript" src="google_search.js"></script>
+    </body>
+</html>
