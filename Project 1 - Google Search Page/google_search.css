@@ -79,11 +79,18 @@ a:hover {
   margin-top: 37px;
   margin-bottom: 20px;
 }
+#txtSearch:hover {
+  border: 3px solid #5f6368;
+}
 .searchButton {
-  background-color: #f2f2f2;
+  background-color: #f4f4f4;
   color: #5f6368;
   padding: 10px;
 }
+.searchButton:hover {
+  border: 3px solid #5f6368;
+}
+
 .signInButton {
   background-color: #4586f6;
   color: #ffffff;

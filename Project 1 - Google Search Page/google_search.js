@@ -14,8 +14,8 @@ function changeTheme(){
         document.getElementById("btnTheme").style.color = "#212121";
         document.body.style.background = "#303030";
         document.getElementById("bottomFooter").style.background = "#212121";
-        document.getElementById("txtSearch").style.background = "#424242";
         document.getElementById("bottomFooter").style.borderTop = "none";
+        document.getElementById("txtSearch").style.background = "#424242";
     }
     else{
         document.querySelector('#btnTheme').innerText = "Dark Theme";
@@ -23,7 +23,7 @@ function changeTheme(){
         document.getElementById("btnTheme").style.color = "#FFFFFF";
         document.body.style.background = "#FFFFFF";
         document.getElementById("bottomFooter").style.background = "#f2f2f2";
-        document.getElementById("txtSearch").style.background = "#FFFFFF";
         document.getElementById("bottomFooter").style.borderTop = "1px solid #e4e4e4";
+        document.getElementById("txtSearch").style.background = "#FFFFFF";
     }
 }
