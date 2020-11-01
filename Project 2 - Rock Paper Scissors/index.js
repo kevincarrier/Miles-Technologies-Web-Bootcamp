@@ -2,7 +2,7 @@ let rounds = 0;
 let currentRound = 0;
 let computerWins = 0;
 let yourWins = 0;
-let availableChoices = ["rock", "paper", "scissors"];
+const availableChoices = ["rock", "paper", "scissors"];
 
 function restartGame() {
   rounds = 0;
