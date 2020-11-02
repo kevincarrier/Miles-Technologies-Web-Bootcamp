@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="center">
+        <div style="float: left; margin-right: 20px">
+          <label for="txtFirstNumber" class="numberLabel">First Number</label>
+          <input
+            id="txtFirstNumber"
+            type="number"
+            value=""
+            name="txtFirstNumber"
+            class="numberBoxes"
+            onchange="validNumber(this.value, 'txtFirstNumber')"
+          />
+        </div>
+
+        <div style="float: left">
+          <label for="txtSecondNumber" class="numberLabel">Second Number</label>
+          <input
+            id="txtSecondNumber"
+            type="number"
+            value=""
+            name="txtSecondNumber"
+            class="numberBoxes"
+            onchange="validNumber(this.value, 'txtSecondNumber')"
+          />
+        </div>
+      </div>
+      <div class="center">
+        <div class="operationList">
+          <input type="radio" id="add" name="operation" value="add" checked />
+          <label for="add">Add</label>
+          <input type="radio" id="subtract" name="operation" value="subtract" />
+          <label for="subtract">Subtract</label>
+          <input type="radio" id="multiply" name="operation" value="multiply" />
+          <label for="multiply">Multiply</label>
+          <input type="radio" id="divide" name="operation" value="divide" />
+          <label for="divide">Divide</label>
+        </div>
+      </div>
+      <div class="center">
+        <div style="float: left; margin-right: 20px">
+          <button class="blueButton" id="btnCalculate">=</button>
+        </div>
+        <div style="float: left">
+          <button class="grayButton" id="btnClear">Clear</button>
+        </div>
+      </div>
+      <div class="center">
+        <label id="lblResult"></label>
+      </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>

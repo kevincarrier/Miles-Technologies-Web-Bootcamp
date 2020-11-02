@@ -1,0 +1,55 @@
+body {
+  font-family: arial, sans-serif;
+  background-color: #073b4c;
+  color: #118ab2;
+  font-style: bold;
+  font-size: 30px;
+  margin: 0;
+}
+.container {
+  position: absolute; /* or absolute */
+  top: 35%;
+  left: 35%;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.numberLabel {
+  text-align: center;
+}
+.numberBoxes {
+  font-family: "Orbitron", sans-serif;
+  color: #06d6a0;
+  background-color: #212121;
+  font-size: 20px;
+}
+input,
+label {
+  display: block;
+}
+.operationList {
+  display: flex;
+}
+input {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.blueButton {
+  background-color: #007bff;
+  color: white;
+  font-size: 40px;
+  padding: 10px 20px 10px 20px;
+}
+.grayButton {
+  background-color: #f4f4f4;
+  color: #5f6368;
+  font-size: 40px;
+  padding: 10px 20px 10px 20px;
+}
+#lblResult {
+  color: #06d6a0;
+  font-size: 40px;
+}
