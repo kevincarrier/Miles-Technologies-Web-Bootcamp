@@ -6,11 +6,11 @@ document.getElementById("btnClear").addEventListener("click", clearValues);
 document.getElementById("btnCalculate").addEventListener("click", calculate);
 
 function clearValues() {
-  document.getElementById("lblResult").style.visibility = "hidden";
+  document.getElementById("lblResult").classList.add("hideResult");
   document.getElementById("txtFirstNumber").value = "";
   document.getElementById("txtSecondNumber").value = "";
-  document.getElementById("txtFirstNumber").style.backgroundColor = "#212121";
-  document.getElementById("txtSecondNumber").style.backgroundColor = "#212121";
+  document.getElementById("txtFirstNumber").classList.remove("invalid-input");
+  document.getElementById("txtSecondNumber").classList.remove("invalid-input");
   document.getElementById("txtFirstNumber").focus();
   document.getElementById("add").checked = true;
 }
@@ -45,7 +45,7 @@ function calculate() {
     document.getElementById(
       "lblResult"
     ).innerHTML = finalAnswer;
-    document.getElementById("lblResult").style.visibility = "visible";
+    document.getElementById("lblResult").classList = "";
   }
 }
 
@@ -56,9 +56,9 @@ radios.forEach((radio) =>
 
 function validNumber(enteredValue, textboxChanged){
     if(isNaN(parseInt(enteredValue))){
-        document.getElementById(textboxChanged).style.backgroundColor = "#ef476f";
+      document.getElementById(textboxChanged).classList.add("invalid-input");
     }
     else{
-         document.getElementById(textboxChanged).style.backgroundColor = "#212121";
+      document.getElementById(textboxChanged).classList.remove("invalid-input");
     }
 }

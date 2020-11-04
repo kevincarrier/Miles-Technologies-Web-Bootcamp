@@ -7,7 +7,7 @@ body {
   margin: 0;
 }
 .container {
-  position: absolute; /* or absolute */
+  position: absolute;
   top: 35%;
   left: 35%;
 }
@@ -52,4 +52,10 @@ input {
 #lblResult {
   color: #06d6a0;
   font-size: 40px;
+}
+.hideResult {
+  visibility: hidden;
+}
+.invalid-input {
+  background-color: #ef476f;
 }

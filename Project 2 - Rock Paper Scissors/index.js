@@ -86,7 +86,7 @@ function getComputerRoundChoice() {
 
 function roundStarted(){
   document.body.classList = "";
-  //document.body.style.backgroundColor = "#4b0082";
+  
   let setupGame = `<header id="navbar"></header>
               <section id="content">
                 <a href="#" onclick="selectedRoundChoice('rock')">
