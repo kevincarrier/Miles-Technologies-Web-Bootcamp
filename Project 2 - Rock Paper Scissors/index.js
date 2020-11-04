@@ -112,7 +112,7 @@ function displayRoundResults(yourChoice, computerChoice, roundWinner) {
       "game"
     ).innerHTML = `<header id="navbar"></header>
               <section id="content">
-                <h2>You both chose ${yourChoice.toUpperCase()}.</h2>
+                <h2 id="scoreboard">You both chose ${yourChoice.toUpperCase()}.</h2>
                 <br/><br/>
                 <h2>It's a tie! Replay Round ${currentRound} by selecting either rock, paper, or scissors.</h2>
                 <a href="#" onclick="selectedRoundChoice('rock')">
