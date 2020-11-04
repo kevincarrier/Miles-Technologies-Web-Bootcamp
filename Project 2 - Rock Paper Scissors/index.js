@@ -85,7 +85,8 @@ function getComputerRoundChoice() {
 }
 
 function roundStarted(){
-  document.body.style.backgroundColor = "#4b0082";
+  document.body.classList = "";
+  //document.body.style.backgroundColor = "#4b0082";
   let setupGame = `<header id="navbar"></header>
               <section id="content">
                 <a href="#" onclick="selectedRoundChoice('rock')">
@@ -105,6 +106,7 @@ function roundStarted(){
 }
 
 function displayRoundResults(yourChoice, computerChoice, roundWinner) {
+  document.body.classList = "";
   if(roundWinner == "Tie"){
      document.getElementById(
       "game"
@@ -123,7 +125,7 @@ function displayRoundResults(yourChoice, computerChoice, roundWinner) {
                     <img src="images/scissors.png" />
                 </a>
             </section>`;
-        document.body.style.backgroundColor = "blue";
+        document.body.classList.add("blue-tie-theme");
   }
   else{
     let reasonForWin = "";
@@ -148,11 +150,11 @@ function displayRoundResults(yourChoice, computerChoice, roundWinner) {
                 <button class="btnGray" onclick="nextRound()">Next Round</button>
         </section>`;
     if(roundWinner == "You"){
-      document.body.style.backgroundColor = "green";
+      document.body.classList.add("green-youwin-theme");
     }
 
     if(roundWinner == "Computer"){
-      document.body.style.backgroundColor = "red";
+      document.body.classList.add("red-compwin-theme");
     }
   }
 }
@@ -170,6 +172,7 @@ function nextRound(){
 
 function gameCompleted(){
   let displayFinalWinner = "";
+  document.body.classList = "";
   if(yourWins > computerWins){
     displayFinalWinner = `
               <section id="content">
@@ -180,7 +183,7 @@ function gameCompleted(){
                 <br/><br/><br/>
                 <button class="btnGray" onclick="restartGame()">Play Again</button>
         </section>`;
-    document.body.style.backgroundColor = "green";
+    document.body.classList.add("green-youwin-theme");
   }
   else if(computerWins > yourWins){
      displayFinalWinner = `
@@ -192,7 +195,7 @@ function gameCompleted(){
                 <br/><br/><br/>
                 <button class="btnGray" onclick="restartGame()">Play Again</button>
         </section>`;
-    document.body.style.backgroundColor = "red";
+    document.body.classList.add("red-compwin-theme");
   }
   else{
      displayFinalWinner = `
@@ -204,7 +207,7 @@ function gameCompleted(){
                 <br/><br/><br/>
                 <button class="btnGray" onclick="restartGame()">Play Again</button>
         </section>`;
-    document.body.style.backgroundColor = "blue";
+    document.body.classList.add("blue-tie-theme");
   }
 
   document.getElementById(

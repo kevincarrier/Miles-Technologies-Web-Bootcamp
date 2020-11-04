@@ -57,3 +57,13 @@ a {
 #resultYou {
   font-size: 20px;
 }
+
+.green-youwin-theme {
+  background-color: green;
+}
+.red-compwin-theme {
+  background-color: red;
+}
+.blue-tie-theme {
+  background-color: blue;
+}
