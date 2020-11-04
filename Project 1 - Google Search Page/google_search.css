@@ -18,13 +18,11 @@ header {
   float: right;
 }
 footer {
-  background-color: #f2f2f2;
   position: fixed;
   width: 100%;
   height: 35px;
   bottom: 0;
   line-height: 40px;
-  border-top: 1px solid #e4e4e4;
   padding-bottom: 5px;
 }
 a {
@@ -101,11 +99,42 @@ a:hover {
   font-weight: bold;
 }
 #btnTheme {
-  background-color: #212121;
-  color: #ffffff;
   padding: 5px 15px 5px 15px;
   font-size: 14px;
   margin-left: 20px;
   margin-right: 27px;
   font-weight: bold;
+}
+
+/*Light Theme - Default*/
+.light-body {
+  background-color: #ffffff;
+}
+.light-button {
+  background-color: #212121;
+  color: #ffffff;
+}
+.light-footer {
+  background-color: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+}
+.light-search {
+  background-color: #ffffff;
+}
+
+/*Dark Theme - Default*/
+.dark-body {
+  background-color: #303030;
+}
+
+.dark-button {
+  background-color: #ffffff;
+  color: #212121;
+}
+.dark-footer {
+  background-color: #212121;
+  border-top: none;
+}
+.dark-search {
+  background-color: #424242;
 }

@@ -1,29 +1,33 @@
 function changeTheme(){
 
-    var element = document.getElementById('btnTheme');
-    var style;
-    if (window.getComputedStyle) {
-        style = window.getComputedStyle(element);
-    } else {
-        style = element.currentStyle;
-    }
+    var btnTheme = document.getElementById('btnTheme');
 
-    if(style.backgroundColor == "rgb(33, 33, 33)"){
-        document.querySelector('#btnTheme').innerText = "Light Theme";
-        document.getElementById("btnTheme").style.background = "#FFFFFF";
-        document.getElementById("btnTheme").style.color = "#212121";
-        document.body.style.background = "#303030";
-        document.getElementById("bottomFooter").style.background = "#212121";
-        document.getElementById("bottomFooter").style.borderTop = "none";
-        document.getElementById("txtSearch").style.background = "#424242";
+    if(btnTheme.classList.contains("light-button")){
+        //Remove light theme
+        document.body.classList.remove("light-body");
+        btnTheme.classList.remove("light-button");
+        document.getElementById("bottomFooter").classList.remove("light-footer");
+        document.getElementById("txtSearch").classList.remove("light-search");
+
+        //Add dark theme
+        document.body.classList.add("dark-body");
+        btnTheme.classList.add("dark-button");
+        document.getElementById("bottomFooter").classList.add("dark-footer");
+        document.getElementById("txtSearch").classList.add("dark-search");
+        btnTheme.innerText = "Light Theme";
     }
     else{
-        document.querySelector('#btnTheme').innerText = "Dark Theme";
-        document.getElementById("btnTheme").style.background = "#212121";
-        document.getElementById("btnTheme").style.color = "#FFFFFF";
-        document.body.style.background = "#FFFFFF";
-        document.getElementById("bottomFooter").style.background = "#f2f2f2";
-        document.getElementById("bottomFooter").style.borderTop = "1px solid #e4e4e4";
-        document.getElementById("txtSearch").style.background = "#FFFFFF";
+        //Remove dark theme
+        document.body.classList.remove("dark-body");
+        btnTheme.classList.remove("dark-button");
+        document.getElementById("bottomFooter").classList.remove("dark-footer");
+        document.getElementById("txtSearch").classList.remove("dark-search");
+
+        //Add light theme
+        document.body.classList.add("light-body");
+        btnTheme.classList.add("light-button");
+        document.getElementById("bottomFooter").classList.add("light-footer");
+        document.getElementById("txtSearch").classList.add("light-search");
+        btnTheme.innerText = "Dark Theme";
     }
 }
